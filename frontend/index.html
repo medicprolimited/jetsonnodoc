@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jetson Embedding Generator</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jetson Embedding Generator</h1>
+            <p>Generate text embeddings using state-of-the-art models</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="model-selector">
+                    <label for="model">Select Model:</label>
+                    <select id="model" name="model">
+                        <option value="all-MiniLM-L6-v2">all-MiniLM-L6-v2 (Faster)</option>
+                        <option value="all-mpnet-base-v2">all-mpnet-base-v2 (More Accurate)</option>
+                    </select>
+                </div>
+
+                <div class="text-input">
+                    <label for="text">Enter Text:</label>
+                    <textarea id="text" name="text" rows="4" placeholder="Enter your text here..."></textarea>
+                </div>
+
+                <button id="generate" class="primary-button">Generate Embedding</button>
+            </div>
+
+            <div class="result-section">
+                <h2>Result</h2>
+                <div id="loading" class="loading hidden">Generating embedding...</div>
+                <div id="error" class="error hidden"></div>
+                <div id="result" class="result hidden">
+                    <h3>Embedding Vector:</h3>
+                    <pre id="embedding"></pre>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html> 
