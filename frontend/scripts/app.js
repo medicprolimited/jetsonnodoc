@@ -1,5 +1,5 @@
 // API configuration
-const API_BASE_URL = 'https://cdb2-5-154-184-216.ngrok-free.app'; // Replace with your actual ngrok URL
+const API_BASE_URL = 'https://16bb-5-154-184-216.ngrok-free.app'; // Replace with your actual ngrok URL
 
 // DOM elements
 const modelSelect = document.getElementById('model');
